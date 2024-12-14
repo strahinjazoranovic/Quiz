@@ -5,12 +5,22 @@ body {
     background-image: linear-gradient(lightblue, #F5F5DC, black);
 }
 
-/* Dit is de Quiz tekst die je ziet wanneer je de pagina opstart*/
+/* Dit is de Quiz tekst die je ziet wanneer je de pagina opstart voor welke taal je kiest*/
 #header {
     color: #F5F5DC;
     margin: 0px;
     text-align: center;
-    font-size: 100px;
+    font-size: 80px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Dit is de Quiz tekst die je ziet wanneer je de home pagina opstart*/
+#header1 {
+    color: #F5F5DC;
+    margin: 0px;
+    margin-bottom: 150px;
+    text-align: center;
+    font-size: 90px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -20,15 +30,34 @@ body {
     color: black;
     justify-content: center;
     border-radius: 20px;
-    margin-top: 200px;
+    margin-top: 150px;
+}
+
+/* dit is de tekst die je ziet op de home pagina voor waar deze website voor is */
+#hometext {
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin-left: 600px;
+    margin-right: 600px;
+    animation: fade 1s;
+    font-size: 12px;
 }
 
 /* dit is de antwoorden die je ziet op de startpagina */
 form {
     position: relative;
     background-color: white;
-    border-radius: 20px; 
-    padding: 100px;
+    border-radius: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    margin: 0px;
+    animation: SlideinLeft 0.47s;
 }
 
 /* dit is de code voor de animatie die je ziet op de antwoorden */
@@ -39,7 +68,9 @@ form {
 }
 
 form::after,
-form::before {
+#hometext::after,
+form::before,
+#hometext::before {
     content: '';
     position: absolute;
     height: 100%;
@@ -59,27 +90,10 @@ form::before {
     filter: blur(2rem)
 }
 
-/* Dit is de animatie die gebruikt wordt voor de border */
-@keyframes spin{
-    from {
-      --angle: 0deg;
-    }
-    to {
-    --angle: 360deg;
-    }
+#hometext::before {
+    filter: blur(2rem)
 }
 
-/* Dit is de animatie voor de footer */
-@keyframes foot {
-    from {
-      opacity: 0;
-      scale: 0.5;
-    }
-    to {
-      opacity: 1;
-      scale: 1;
-    }
-  }
 
 /* Dit is de tekst in de input */
 label {
@@ -95,13 +109,94 @@ footer {
     padding-bottom: 100px;
     display: flex;
     justify-content: center;
-    background-color: black;
-    border-top: 4px solid black;
+    background-image: linear-gradient(#faf0e6, black);
     color: white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 20px;
-    margin-top: 850px;
-    animation: foot linear;
+    margin-top: 500px;
+    animation: fade linear;
     animation-timeline: view();
     animation-range: entry 0;
+}
+
+/* dit is voor de knop die je ziet op de home pagina om verder te gaan naar de quiz vragen*/
+#homebutton {
+    background-color: rgb(81, 231, 81);
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    width: 100%;
+    padding: 12px;
+    margin: 0px;
+    border-style: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* dit is voor de knop die je ziet op de home pagina om verder te gaan naar de quiz vragen*/
+#quizbutton {
+    background-color: rgb(81, 231, 81);
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border-style: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* responsiveness */
+@media (max-width: 1600px) {
+    #hometext {
+        font-size: 20px;
+        margin-left: 200px;
+        margin-right: 200px;
+        animation: fade 2s;
+    }
+}
+
+/* Dit is de animatie die gebruikt wordt voor de border */
+@keyframes spin {
+    from {
+        --angle: 0deg;
+    }
+
+    to {
+        --angle: 360deg;
+    }
+}
+
+/* Dit is de animatie voor als een element van links komt */
+@keyframes SlideinLeft {
+    from {
+        transform: translateX(-2400px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Dit is de animatie voor als een element te voorschijnkomt */
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Dit is de animatie voor de footer */
+@keyframes foot {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
 }
