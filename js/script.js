@@ -32,4 +32,4 @@ function setNextQuestion() {
     
 }
 
-// https://www.youtube.com/watch?v=riDzcEQbX6k voor tutorial hoe de quiz zal moeten werken
+// https://www.youtube.com/watch?v=riDzcEQbX6k 14:29 voor tutorial hoe je de quiz verder moet maken
