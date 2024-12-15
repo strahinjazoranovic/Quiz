@@ -12,6 +12,7 @@ body {
     font-size: 80px;
     margin-bottom: 180px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    animation: SlideinTop 1s;
 }
 
 /* dit is voor alle links */
@@ -24,6 +25,8 @@ a {
     display: flex;
     color: black;
     justify-content: center;
+    flex-direction: column;
+    row-gap: 40px;
     border-radius: 20px;
 }
 
@@ -58,13 +61,15 @@ a {
 /* dit is de antwoorden die je ziet op de taalpagina */
 form {
     position: relative;
+    text-align: center;
     background-color: white;
     border-radius: 20px;
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 40px;
     padding-bottom: 10px;
-    margin: 0px;
+    margin-left: 600px;
+    margin-right: 600px;
     animation: SlideinLeft 0.47s;
 }
 
@@ -79,7 +84,9 @@ form {
 form::after,
 #hometext::after,
 form::before,
-#hometext::before {
+#hometext::before,
+#quiztext::after,
+#quiztext::before {
     content: '';
     position: absolute;
     height: 100%;
@@ -105,6 +112,9 @@ form::before {
     filter: blur(2rem)
 }
 
+#quiztext::before {
+    filter: blur(2rem);
+}
 
 /* Dit is voor de tekst in de input */
 label {
@@ -156,6 +166,18 @@ footer {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+/* dit is voor de knop op nederlands en engels.html op de quiz te starten en de game/quiz loop te sarten*/
+#nederlandsbutton, #engelsbutton {
+    background-color: rgb(81, 231, 81);
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    width: 100%;
+    padding: 12px;
+    border-style: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 /* Dit is text dat wordt gebruikt om de user te helpen met de navigatie van de website */
 #tutorialtext {
     margin-top: 20px;
@@ -164,17 +186,26 @@ footer {
 }
 
 /* responsiveness */
-@media (max-width: 1600px) {
-    #hometext {
-        font-size: 20px;
-        margin-left: 200px;
-        margin-right: 200px;
+@media (max-width: 1500px) {
+    #hometext, form, #quiztext {
+        font-size: 12px;
+        margin-left: 400px;
+        margin-right: 400px;
+        animation: fade 2s;
+    }
+}
+
+@media (max-width: 1061px) {
+    #hometext, form, #quiztext {
+        font-size: 12px;
+        margin-left: 50px;
+        margin-right: 50px;
         animation: fade 2s;
     }
 }
 
 /* dit is voor als je hovert boven de homebutton en quizbutton */
-#homebutton:hover, #quizbutton:hover {
+#homebutton:hover, #nederlandsbutton:hover, #engelsbutton:hover {
     transform: translateY(-1px);
     opacity: 0.6;
 }
@@ -210,6 +241,16 @@ footer {
 
     to {
         transform: translateX(0);
+    }
+}
+
+@keyframes SlideinTop {
+    from {
+        transform: translateY(-150px);
+    }
+
+    to {
+        transform: translateY(0);
     }
 }
 
