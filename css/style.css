@@ -5,35 +5,29 @@ body {
     background-image: linear-gradient(lightblue, #F5F5DC, black);
 }
 
-/* Dit is de Quiz tekst die je ziet wanneer je de pagina opstart voor welke taal je kiest*/
+/* Dit is de bovenste tekst op de elke pagina*/
 #header {
     color: #F5F5DC;
-    margin: 0px;
     text-align: center;
     font-size: 80px;
+    margin-bottom: 180px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/* Dit is de Quiz tekst die je ziet wanneer je de home pagina opstart*/
-#header1 {
-    color: #F5F5DC;
-    margin: 0px;
-    margin-bottom: 150px;
-    text-align: center;
-    font-size: 90px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+/* dit is voor alle links */
+a {
+    text-decoration: none;
 }
 
-/* Dit is de box met de vraag engels of nederlands die je ziet op de home pagina*/
+/* Dit is de box met de vraag Engels of Nederlands die je ziet op de taalpagina*/
 #nederlands-engels {
     display: flex;
     color: black;
     justify-content: center;
     border-radius: 20px;
-    margin-top: 150px;
 }
 
-/* dit is de tekst die je ziet op de home pagina voor waar deze website voor is */
+/* dit is de tekst die je ziet op de home pagina*/
 #hometext {
     text-align: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -47,7 +41,21 @@ body {
     font-size: 12px;
 }
 
-/* dit is de antwoorden die je ziet op de startpagina */
+/* dit is de tekst die je ziet op de quizpagina*/
+#quiztext {
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin-left: 600px;
+    margin-right: 600px;
+    animation: SlideinRight 0.8s;
+    font-size: 12px;
+}
+
+/* dit is de antwoorden die je ziet op de taalpagina */
 form {
     position: relative;
     background-color: white;
@@ -60,13 +68,14 @@ form {
     animation: SlideinLeft 0.47s;
 }
 
-/* dit is de code voor de animatie die je ziet op de antwoorden */
+/* dit is de property die gebruikt wordt voor de kleuranimatie die rond de border van een element gaat(Is op dit moment niet in gebruik voor het animatiedeel)*/
 @property --angle {
     syntax: "<angle>";
     initial-value: 0deg;
     inherits: false;
 }
 
+/* Dit heeft allemaal te maken met het glow effect dat je kunt zien op elke textbox */
 form::after,
 #hometext::after,
 form::before,
@@ -86,22 +95,24 @@ form::before,
     animation: 8s spin linear infinite;
 }
 
+/* Hier krijgt het licht dat uit de gradient komt een blur effect */
 form::before {
     filter: blur(2rem)
 }
 
+/* Hier krijgt het licht dat uit de gradient komt een blur effect */
 #hometext::before {
     filter: blur(2rem)
 }
 
 
-/* Dit is de tekst in de input */
+/* Dit is voor de tekst in de input */
 label {
     font-size: 25px;
     font-family: monospace;
 }
 
-/* footer */
+/* Dit is voor de onderkant van de pagina met de copyright symbolen */
 footer {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -119,7 +130,7 @@ footer {
     animation-range: entry 0;
 }
 
-/* dit is voor de knop die je ziet op de home pagina om verder te gaan naar de quiz vragen*/
+/* dit is voor de knop die je ziet op de home pagina om verder te gaan naar de taalpagina*/
 #homebutton {
     background-color: rgb(81, 231, 81);
     color: white;
@@ -132,7 +143,7 @@ footer {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/* dit is voor de knop die je ziet op de home pagina om verder te gaan naar de quiz vragen*/
+/* dit is voor de knop die je ziet op de taalpagina om je taal te kiezen en vervolgens verder te gaan naar de quizvragen*/
 #quizbutton {
     background-color: rgb(81, 231, 81);
     color: white;
@@ -140,8 +151,14 @@ footer {
     border-radius: 10px;
     width: 100%;
     padding: 12px;
-    margin-top: 20px;
     border-style: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Dit is text dat wordt gebruikt om de user te helpen met de navigatie van de website */
+#tutorialtext {
+    margin-top: 20px;
+    font-size: 14px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -155,7 +172,13 @@ footer {
     }
 }
 
-/* Dit is de animatie die gebruikt wordt voor de border */
+/* dit is voor als je hovert boven de homebutton en quizbutton */
+#homebutton:hover, #quizbutton:hover {
+    transform: translateY(-1px);
+    opacity: 0.6;
+}
+
+/* Dit is de animatie die gebruikt wordt voor de kleuranimatie die rond de border van een element gaat(Is op dit moment niet in gebruik)
 @keyframes spin {
     from {
         --angle: 0deg;
@@ -165,11 +188,23 @@ footer {
         --angle: 360deg;
     }
 }
+*/
 
-/* Dit is de animatie voor als een element van links komt */
+/* Dit is de animatie voor een element die links komt */
 @keyframes SlideinLeft {
     from {
         transform: translateX(-2400px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Dit is de animatie voor een element die rechts komt */
+@keyframes SlideinRight {
+    from {
+        transform: translateX(2400px);
     }
 
     to {
@@ -185,18 +220,5 @@ footer {
 
     to {
         opacity: 1;
-    }
-}
-
-/* Dit is de animatie voor de footer */
-@keyframes foot {
-    from {
-        opacity: 0;
-        scale: 0.5;
-    }
-
-    to {
-        opacity: 1;
-        scale: 1;
     }
 }
