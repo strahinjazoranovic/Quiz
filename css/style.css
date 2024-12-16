@@ -206,7 +206,7 @@ footer {
 }
 
 /* dit is voor als je hovert boven de homebutton en quizbutton */
-#homebutton:hover, #nederlandsbutton:hover, #engelsbutton:hover {
+#homebutton:hover, #nederlandsbutton:hover, #engelsbutton:hover, #travisscott:hover, #playboicarti:hover, #kendricklamar:hover, #kanye:hover, #future:hover, #secret:hover {
     transform: translateY(-1px);
     opacity: 0.6;
 }
