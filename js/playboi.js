@@ -157,7 +157,7 @@ function showScore() {
   resetstate();  // Reset de weergave
   questionElement.innerHTML = `Je scoorde ${score} van de ${questions.length}!`;  // Toon de score
   if (score === 10){
-    questionElement.innerHTML = `Je scoorde ${score} van de ${questions.length}! <br> FWEEHHHHHHH HOMICIDE`;  // Toon de score
+    questionElement.innerHTML = `Je scoorde ${score} van de ${questions.length}! <br> FWEEHHHHHHH`;  // Toon de score
     muziek.play()
 }
   nextButton.innerHTML = "Speel opnieuw";  // Zet de tekst van de knop op "Speel opnieuw"
