@@ -2,7 +2,7 @@
 body {
     margin: 0px;
     padding: 0px;
-    background-image: linear-gradient(lightblue, #F5F5DC, black);
+    background-color: #081b29;
 }
 
 /* Dit is de bovenste tekst op de elke pagina*/
@@ -38,8 +38,8 @@ a {
     background-color: white;
     border-radius: 20px;
     padding: 20px;
-    margin-left: 600px;
-    margin-right: 600px;
+    margin-left: 500px;
+    margin-right: 500px;
     animation: fade 1s;
     font-size: 12px;
 }
@@ -52,9 +52,9 @@ a {
     background-color: white;
     border-radius: 20px;
     padding: 20px;
-    margin-left: 600px;
-    margin-right: 600px;
-    animation: SlideinRight 0.8s;
+    margin-left: 500px;
+    margin-right: 500px;
+    animation: fade 1s;
     font-size: 12px;
 }
 
@@ -64,12 +64,11 @@ form {
     text-align: center;
     background-color: white;
     border-radius: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 40px;
-    padding-bottom: 10px;
-    margin-left: 600px;
-    margin-right: 600px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin-left: 500px;
+    margin-right: 500px;
     animation: SlideinLeft 0.47s;
 }
 
@@ -131,12 +130,12 @@ footer {
     display: flex;
     justify-content: center;
     text-align: center;
-    background-image: linear-gradient(#faf0e6, black);
+    background-color: #081b29;
     color: white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 20px;
-    margin-top: 500px;
-    animation: fade linear;
+    margin-top: 350px;
+    animation: foot linear;
     animation-timeline: view();
     animation-range: entry 0;
 }
@@ -166,8 +165,8 @@ footer {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/* dit is voor de knop op nederlands en engels.html op de quiz te starten en de game/quiz loop te sarten*/
-#nederlandsbutton, #engelsbutton {
+/* dit is voor de knop op taal.html om de engels quiz te starten*/
+#engelsbutton, #nederlandsbutton, #travisscott, #playboicarti, #kendricklamar, #kanye, #future, #secret {
     background-color: rgb(81, 231, 81);
     color: white;
     font-size: 20px;
@@ -178,10 +177,12 @@ footer {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+
 /* Dit is text dat wordt gebruikt om de user te helpen met de navigatie van de website */
 #tutorialtext {
     margin-top: 20px;
-    font-size: 14px;
+    font-size: 16px;
+    color: black;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -209,30 +210,28 @@ footer {
     transform: translateY(-1px);
     opacity: 0.6;
 }
+
 /* Stijl voor de hoofdtitel in de quiz */
 .quiznederlands h1{
-
 font-weight: 25px;
-color:#001e4d;
+color:#081b29;
 font-weight:600;
 border-bottom:1px solid #333;
-padding-bottom: 30px;
-
+padding-bottom: 20px;
 } 
+
 /* Stijl voor de container van de quiz */
 .quiz{
 padding:20px 0;
-
-
 }
+
 /* Stijl voor de subtitel in de quiz */
 .quiz h2{
-
 font-size:18px ;
 color:#001e4d;
 font-weight:600 ;
-
 }
+
 /* dit is de buttons van de quiz-antwoorden */
 .btn{
 background: #fff;
@@ -244,19 +243,17 @@ padding: 10px;
 margin:10px 0;
 text-align:left;
 border-radius: 4px; 
-
 }
+
 /* Stijl voor wanneer een knop wordt hoverd met de muis eroverheen beweegt */
 .btn:hover:not([disabled]) {
 background: #222;
 color: #fff;
-
 }
+
 /* Stijl voor wanneer een knop uitgeschakeld is */
 .btn:disabled{
 cursor:no-drop;
-
-
 
 }
 /* Stijl voor de 'Next' knop */
@@ -271,14 +268,14 @@ margin: 20px auto 0;
 border-radius: 4px;
 cursor:pointer;
 display: none;
-
 }
+
 /* Stijl voor een juiste antwoord */
 .correct{
 background:#9aeabc ;
-
-
 }
+
+
 /* Stijl voor een onjuiste antwoord  */
 .incorrect{
 background: #ff9393;
@@ -308,6 +305,18 @@ background: #ff9393;
     }
 }
 
+/* Dit is de animatie voor de footer*/
+@keyframes foot {
+    from {
+      opacity: 0;
+      scale: 0.5;
+    }
+    to {
+      opacity: 1;
+      scale: 1;
+    }
+  }
+
 /* Dit is de animatie voor een element die rechts komt */
 @keyframes SlideinRight {
     from {
@@ -319,6 +328,7 @@ background: #ff9393;
     }
 }
 
+/* Dit is de animatie voor een element die van boven komt */
 @keyframes SlideinTop {
     from {
         transform: translateY(-150px);

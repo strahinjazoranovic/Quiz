@@ -1,91 +1,93 @@
 // Array van vragen en antwoorden voor de quiz
 const questions = [
-  {
-    question: "Wat is de hoofdstad van Nederland?", // Vraag 1
-    answers: [
-      { test: "Rotterdam", correct: false },  // Onjuist antwoord
-      { test: "Amsterdam", correct: true },   // Juist antwoord
-      { test: "Haarlem", correct: false },    // Onjuist antwoord
-    ]
-  },
-  {
-    question: "Wat is de hoofdstad van Frankrijk", // Vraag 2
-    answers: [
-      { test: "Marseille", correct: false },
-      { test: "Lyon", correct: false },
-      { test: "Parijs", correct: true }, // Correct antwoord
-    ]
-  },
-  {
-    question: "Wat is de hoofdstad van Duitsland", // Vraag 3
-    answers: [
-      { test: "München", correct: false },
-      { test: "Frankfurt", correct: false },
-      { test: "Berlijn", correct: true }, // Correct antwoord
-    ]
-  },
-  {
-    question: "Wat is de hoofdstad van België", // Vraag 4
-    answers: [
-      { test: "Brussel", correct: true }, // Correct antwoord
-      { test: "Gent", correct: false },
-      { test: "Antwerpen", correct: false },
-    ]
-  },
-  {
-    question: "Wat is de hoofdstad van Zweden?", // Vraag 5
-    answers: [
-      { test: "Göteborg", correct: false },
-      { test: "Stockholm", correct: true }, // Correct antwoord
-      { test: "Malmö", correct: false },
-    ]
-  },
-  {
-    question: "Wat is de hoofdstad van Mexico?", // Vraag 6
-    answers: [
-      { test: "Guadalajara", correct: false },
-      { test: "Monterrey", correct: false },
-      { test: "Mexico-Stad", correct: true }, // Correct antwoord
-    ]
-  },
-  {
-    question: "Wat is de hoofdstad van Griekenland?", // Vraag 7
-    answers: [
-      { test: "Athene", correct: true }, // Correct antwoord
-      { test: "Thessaloniki", correct: false },
-      { test: "Kreta", correct: false },
-    ]
-  },
-  {
-    question: "Wat is de hoofdstad van China?", // Vraag 8
-    answers: [
-      { test: "Shanghai", correct: false },
-      { test: "Peking (Beijing)", correct: true }, // Correct antwoord
-      { test: "Hong Kong", correct: false },
-    ]
-  },
-  {
-    question: "Wat is de hoofdstad van Argentinië?", // Vraag 9
-    answers: [
-      { test: "Rosario", correct: false },
-      { test: "Buenos Aires", correct: true }, // Correct antwoord
-      { test: "Córdoba", correct: false },
-    ]
-  },
-  {
-    question: "Wat is de hoofdstad van Indonesië?", // Vraag 10
-    answers: [
-      { test: "Bali", correct: false },
-      { test: "Jakarta", correct: true }, // Correct antwoord
-      { test: "Surabaya", correct: false },
-    ]
-  }
-];
+    {
+      question: "Hoe heet Playboi Carti in het echt?", // Vraag 1
+      answers: [
+        { test: "Jordan Terrell Carter", correct: true },   // Juist antwoord
+        { test: "Carter Pierre Williams", correct: false },  // Onjuist antwoord
+        { test: "Jonathan Taylor Carter", correct: false },  // Onjuist antwoord
+      ]
+    },
+    {
+      question: "Wat is de naam van Playboi Carti's debuutmixtape?", // Vraag 2
+      answers: [
+        { test: "Die Lit", correct: false },
+        { test: "Playboi Carti", correct: true }, // Juist antwoord
+        { test: "Whole Lotta Red", correct: false },
+      ]
+    },
+    {
+      question: "Met welk nummer brak Playboi Carti door?", // Vraag 3
+      answers: [
+        { test: "Magnolia", correct: true },  // Juist antwoord
+        { test: "Shoota", correct: false },
+        { test: "Location", correct: false },
+      ]
+    },
+    {
+      question: "Welke producer werkte veel samen met Playboi Carti?", // Vraag 4
+      answers: [
+        { test: "Metro Boomin", correct: false },
+        { test: "Pierre Bourne", correct: true },  // Juist antwoord
+        { test: "Zaytoven", correct: false },
+      ]
+    },
+    {
+      question: "Wat is de naam van Playboi Carti's tweede studioalbum?", // Vraag 5
+      answers: [
+        { test: "Die Lit", correct: false },
+        { test: "Whole Lotta Red", correct: true },  // Juist antwoord
+        { test: "Vamp Life", correct: false },
+      ]
+    },
+    {
+      question: "Welke unieke stemstijl gebruikt Playboi Carti vaak?", // Vraag 6
+      answers: [
+        { test: "Baby Voice", correct: true },  // Juist antwoord
+        { test: "Mumble Flow", correct: false },
+        { test: "Whisper Flow", correct: false },
+      ]
+    },
+    {
+      question: "Welke rapper is een frequente samenwerkingspartner van Playboi Carti?", // Vraag 7
+      answers: [
+        { test: "Travis Scott", correct: false },
+        { test: "Lil Uzi Vert", correct: true },  // Juist antwoord
+        { test: "Future", correct: false },
+      ]
+    },
+    {
+      question: "Hoe noemen fans de dans bij het nummer 'Magnolia'?", // Vraag 8
+      answers: [
+        { test: "The Milly Rock", correct: true },  // Juist antwoord
+        { test: "The Dab", correct: false },
+        { test: "The Woah", correct: false },
+      ]
+    },
+    {
+      question: "In welk jaar werd Playboi Carti geboren?", // Vraag 9
+      answers: [
+        { test: "1995", correct: false },
+        { test: "1996", correct: true },  // Juist antwoord
+        { test: "1997", correct: false },
+      ]
+    },
+    {
+      question: "Wat is de stijl die vaak wordt geassocieerd met Playboi Carti's muziek?", // Vraag 10
+      answers: [
+        { test: "Trap", correct: true },  // Juist antwoord
+        { test: "Lo-fi Hip Hop", correct: false },
+        { test: "Drill", correct: false },
+      ]
+    }
+  ];
 
-//  elementen voor het weergeven van de vraag en antwoorden
+// Elementen voor het weergeven van de vraag en antwoorden
 const questionElement = document.getElementById("questions");
 const answerButtons = document.getElementById("answers-buttons");
 const nextButton = document.getElementById("next-btn");
+const muziek = new Audio('sounds/seeyuh.mp3') //Dit is het geluid dat je hoort wanneer je een 10 scoort bij Playboi Carti quiz
+
 
 // Variabelen om de voortgang en score bij te houden
 let currentQuestionindex = 0;
@@ -153,8 +155,12 @@ function selectAnswer(e) {
 // Functie om de score weer te geven
 function showScore() {
   resetstate();  // Reset de weergave
-  questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;  // Toon de score
-  nextButton.innerHTML = "Play Again";  // Zet de tekst van de knop op "Play Again"
+  questionElement.innerHTML = `Je scoorde ${score} van de ${questions.length}!`;  // Toon de score
+  if (score === 10){
+    questionElement.innerHTML = `Je scoorde ${score} van de ${questions.length}! <br> FWEEHHHHHHH HOMICIDE`;  // Toon de score
+    muziek.play()
+}
+  nextButton.innerHTML = "Speel opnieuw";  // Zet de tekst van de knop op "Speel opnieuw"
   nextButton.style.display = "block";  // Toon de knop
 }
 
@@ -176,6 +182,7 @@ nextButton.addEventListener("click", () => {
     startQuiz();  // Start de quiz opnieuw
   }
 });
+
 
 // Start de quiz bij het laden van de pagina
 startQuiz();
