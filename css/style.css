@@ -57,10 +57,10 @@ a {
     padding-right: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 50px;
-    animation: SlideinLeft 1.5s;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 80px;
+    animation: SlideinLeft 1.2s;
 }
 
 /* dit is de position properties voor #form */
@@ -71,7 +71,7 @@ a {
     justify-content: center;
     margin-left: 400px;
     margin-right: 400px;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 /* dit is de property die gebruikt wordt voor de kleuranimatie die rond de border van een element gaat(Is op dit moment niet in gebruik voor het animatiedeel)*/
@@ -105,16 +105,16 @@ a {
 
 /* Hier krijgt het licht dat uit de gradient komt een blur effect */
 #form::before {
-    filter: blur(2rem)
+    filter: blur(1.5rem)
 }
 
 /* Hier krijgt het licht dat uit de gradient komt een blur effect */
 #hometext::before {
-    filter: blur(2rem)
+    filter: blur(1.5rem)
 }
 
 #quiztext::before {
-    filter: blur(2rem);
+    filter: blur(1.5rem);
 }
 
 /* Dit is voor de tekst in de input */
@@ -181,8 +181,8 @@ footer {
 
 /* Dit is voor de fotos die je ziet op kies.html */
 #foto {
-    width: 500px;
-    height: 500px;
+    width: 450px;
+    height: 450px;
     margin-bottom: 20px;
     margin-top: 20px;
     border-radius: 20px;
@@ -199,14 +199,14 @@ footer {
 }
 
 /* responsiveness */
-@media (max-width: 1750px) {
+@media (max-width: 1700px) {
     #form1 {
         position: relative;
         display: flex;
         flex-wrap: wrap;  
         justify-content: center;
-        margin-left: 40px;
-        margin-right: 40px;
+        margin-left: 400px;
+        margin-right: 400px;
         animation: fade 1s;
     }
 }
@@ -216,7 +216,7 @@ footer {
         font-size: 12px;
         margin-left: 300px;
         margin-right: 300px;
-        animation: fade 2s;
+        animation: fade 1s;
     }
 
   
@@ -228,7 +228,7 @@ footer {
         font-size: 12px;
         margin-left: 50px;
         margin-right: 50px;
-        animation: fade 2s;
+        animation: fade 1s;
     }
 
     #form1 {
@@ -236,13 +236,15 @@ footer {
         display: flex;
         flex-wrap: wrap;  
         justify-content: center;
-        margin-left: 40px;
-        margin-right: 40px;
+        margin-left: 80px;
+        margin-right: 80px;
+        animation: fade 1s;
     }
 
-    #foto{
-        width: 300px;
-        height: 300px;
+    #foto {
+        width: 350px;
+        height: 350px;
+        animation: fade 1s;
     }
 }
 
