@@ -19,16 +19,6 @@ a {
     text-decoration: none;
 }
 
-/* Dit is de box met de vraag Engels of Nederlands die je ziet op de taalpagina*/
-#nederlands-engels {
-    display: flex;
-    color: black;
-    justify-content: center;
-    flex-direction: column;
-    row-gap: 40px;
-    border-radius: 20px;
-}
-
 /* dit is de tekst die je ziet op de home pagina*/
 #hometext {
     text-align: center;
@@ -58,14 +48,16 @@ a {
 }
 
 /* dit is de antwoorden die je ziet op de taalpagina */
-form {
+#form {
     position: relative;
     text-align: center;
     background-color: white;
     border-radius: 20px;
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 20px;
     padding-bottom: 20px;
+    margin-top: 50px;
     margin-left: 500px;
     margin-right: 500px;
     animation: SlideinLeft 0.47s;
@@ -79,9 +71,9 @@ form {
 }
 
 /* Dit heeft allemaal te maken met het glow effect dat je kunt zien op elke textbox */
-form::after,
+#form::after,
 #hometext::after,
-form::before,
+#form::before,
 #hometext::before,
 #quiztext::after,
 #quiztext::before {
@@ -101,7 +93,7 @@ form::before,
 }
 
 /* Hier krijgt het licht dat uit de gradient komt een blur effect */
-form::before {
+#form::before {
     filter: blur(2rem)
 }
 
@@ -187,7 +179,7 @@ footer {
 
 /* responsiveness */
 @media (max-width: 1500px) {
-    #hometext, form, #quiztext {
+    #hometext, #form, #quiztext {
         font-size: 12px;
         margin-left: 400px;
         margin-right: 400px;
@@ -196,7 +188,7 @@ footer {
 }
 
 @media (max-width: 1061px) {
-    #hometext, form, #quiztext {
+    #hometext, #form, #quiztext {
         font-size: 12px;
         margin-left: 50px;
         margin-right: 50px;
