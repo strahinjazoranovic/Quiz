@@ -4,7 +4,7 @@ const questions = [
         answers: [
             { text: "Miles Parker", correct: false },
             { text: "Yuno Miles", correct: false },
-            { text: "Yuno Parker", correct: true }, // Juist antwoord
+            { text: "Miles Wahlberg", correct: true }, // Juist antwoord
         ]
     },
     {
@@ -68,7 +68,7 @@ const questions = [
         answers: [
             { text: "1995", correct: false },
             { text: "1996", correct: false },
-            { text: "1997", correct: true }, // Juist antwoord
+            { text: "1992", correct: true }, // Juist antwoord
         ]
     },
     {
