@@ -235,7 +235,9 @@ function showScore() {
   resetstate();  // Reset de weergave
   questionElement.innerHTML = `Je scoorde ${score} van de ${questions.length}!`;  // Toon de score
   if (score === 20){
-    questionElement.innerHTML = `Je scoorde ${score} van de ${questions.length}! <br> CAME FROM THE BOTTOM NOW IM AT THE TOP. THIS IS THE SOUND OF A ROBOT `;  // Toon de score
+    questionElement.innerHTML = `Je scoorde ${score} van de ${questions.length}! <br> CAME FROM THE BOTTOM NOW IM AT THE TOP <br> 
+    THIS IS THE SOUND OF A ROBOT <br>
+    ELELELELELE BING ELELELELAELALELELE`;  // Dit krijg je als je alles goed hebt
     muziek.play();
   }
   nextButton.innerHTML = "Speel opnieuw";  // Zet de tekst van de knop op "Speel opnieuw"
