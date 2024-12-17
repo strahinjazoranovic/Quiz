@@ -43,7 +43,7 @@ a {
     padding: 20px;
     margin-left: 500px;
     margin-right: 500px;
-    animation: fade 1s;
+    animation: SlideinLeft 0.8s;
     font-size: 12px;
 }
 
@@ -60,7 +60,7 @@ a {
     margin-left: 40px;
     margin-right: 40px;
     margin-top: 80px;
-    animation: SlideinLeft 1.2s;
+    animation: SlideinLeft 0.8s;
 }
 
 /* dit is de position properties voor #form */
@@ -170,8 +170,8 @@ footer {
 /* dit is voor de knop op taal.html om de engels quiz te starten*/
 #engelsbutton, #nederlandsbutton, #travisscott, #playboicarti, #kendricklamar, #kanye, #future, #secret {
     background-color: rgb(81, 231, 81);
-    color: white;
-    font-size: 24px;
+    color: black;
+    font-size: 35px;
     border-radius: 20px;
     width: 100%;
     padding: 12px;
