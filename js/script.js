@@ -192,6 +192,7 @@ function kendrickQuiz(){
     
     // Start de quiz
     function startQuiz() {
+        muziek.pause()
         currentQuestionindex = 0; // Stel de vraagindex in op 0 (eerste vraag)
         score = 0;  // Reset de score
         nextButton.innerHTML = "Next";  // Zet de tekst van de "Next" knop
