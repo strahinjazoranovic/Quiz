@@ -173,7 +173,7 @@ const questions = [
 const questionElement = document.getElementById("questions");
 const answerButtons = document.getElementById("answers-buttons");
 const nextButton = document.getElementById("next-btn");
-const muziek = new Audio('sounds/'); // Dit is het geluid dat je hoort wanneer je een 10 scoort bij Travis Scott quiz
+const muziek = new Audio('sounds/travis.mp3'); // Dit is het geluid dat je hoort wanneer je een 10 scoort bij Travis Scott quiz
 
 // Variabelen om de voortgang en score bij te houden
 let currentQuestionindex = 0;
@@ -243,7 +243,7 @@ function showScore() {
     resetstate();  // Reset de weergave
     questionElement.innerHTML = `Je scoorde ${score} van de ${questions.length}!`;  // Toon de score
     if (score === 20){
-        questionElement.innerHTML = `Je scoorde ${score} van de ${questions.length}! <br> FWEEHHHHHHH HOMICIDE`;  // Toon de score
+        questionElement.innerHTML = `Je scoorde ${score} van de ${questions.length}! <br> ITS LIT`;  // Toon de score
         muziek.play();
     }
     nextButton.innerHTML = "Speel opnieuw";  // Zet de tekst van de knop op "Speel opnieuw"

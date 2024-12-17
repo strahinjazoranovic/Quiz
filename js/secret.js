@@ -165,7 +165,7 @@ const questions = [
 const questionElement = document.getElementById("questions");
 const answerButtons = document.getElementById("answers-buttons");
 const nextButton = document.getElementById("next-btn");
-const muziek = new Audio(''); // Dit is het geluid dat je hoort wanneer je een 10 scoort bij Yuno Miles quiz
+const muziek = new Audio('sounds/secret.mp3'); // Dit is het geluid dat je hoort wanneer je een 10 scoort bij Yuno Miles quiz
 
 // Variabelen om de voortgang en score bij te houden
 let currentQuestionindex = 0;
@@ -234,8 +234,8 @@ function selectAnswer(e) {
 function showScore() {
   resetstate();  // Reset de weergave
   questionElement.innerHTML = `Je scoorde ${score} van de ${questions.length}!`;  // Toon de score
-  if (score === 10){
-    questionElement.innerHTML = `Je scoorde ${score} van de ${questions.length}! <br> text`;  // Toon de score
+  if (score === 20){
+    questionElement.innerHTML = `Je scoorde ${score} van de ${questions.length}! <br> CAME FROM THE BOTTOM NOW IM AT THE TOP. THIS IS THE SOUND OF A ROBOT `;  // Toon de score
     muziek.play();
   }
   nextButton.innerHTML = "Speel opnieuw";  // Zet de tekst van de knop op "Speel opnieuw"

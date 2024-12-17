@@ -156,8 +156,8 @@ function selectAnswer(e) {
 function showScore() {
   resetstate();  // Reset de weergave
   questionElement.innerHTML = `Je scoorde ${score} van de ${questions.length}!`;  // Toon de score
-  if (score === 10){
-    questionElement.innerHTML = `Je scoorde ${score} van de ${questions.length}! <br> Hey kanye did you put a finger up your booty?`;  // Toon de score
+  if (score === 20){
+    questionElement.innerHTML = `Je scoorde ${score} van de ${questions.length}! <br> Look at Gaga she is the creative director at Polaroid. I like some of the gaga songs, wtf does she know aobut cameras?`;  // Toon de score
     muziek.play()
 }
   nextButton.innerHTML = "Speel opnieuw";  // Zet de tekst van de knop op "Speel opnieuw"

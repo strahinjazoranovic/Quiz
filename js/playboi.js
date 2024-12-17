@@ -156,7 +156,7 @@ function selectAnswer(e) {
 function showScore() {
   resetstate();  // Reset de weergave
   questionElement.innerHTML = `Je scoorde ${score} van de ${questions.length}!`;  // Toon de score
-  if (score === 10){
+  if (score === 20){
     questionElement.innerHTML = `Je scoorde ${score} van de ${questions.length}! <br> FWEEHHHHHHH`;  // Toon de score
     muziek.play()
 }
