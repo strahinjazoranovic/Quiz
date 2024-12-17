@@ -1,93 +1,171 @@
-// Array van vragen en antwoorden voor de quiz
 const questions = [
-    {
-      question: "Hoe heet Playboi Carti in het echt?", // Vraag 1
-      answers: [
-        { test: "Jordan Terrell Carter", correct: true },   // Juist antwoord
-        { test: "Carter Pierre Williams", correct: false },  // Onjuist antwoord
-        { test: "Jonathan Taylor Carter", correct: false },  // Onjuist antwoord
-      ]
-    },
-    {
-      question: "Wat is de naam van Playboi Carti's debuutmixtape?", // Vraag 2
-      answers: [
-        { test: "Die Lit", correct: false },
-        { test: "Playboi Carti", correct: true }, // Juist antwoord
-        { test: "Whole Lotta Red", correct: false },
-      ]
-    },
-    {
-      question: "Met welk nummer brak Playboi Carti door?", // Vraag 3
-      answers: [
-        { test: "Magnolia", correct: true },  // Juist antwoord
-        { test: "Shoota", correct: false },
-        { test: "Location", correct: false },
-      ]
-    },
-    {
-      question: "Welke producer werkte veel samen met Playboi Carti?", // Vraag 4
-      answers: [
-        { test: "Metro Boomin", correct: false },
-        { test: "Pierre Bourne", correct: true },  // Juist antwoord
-        { test: "Zaytoven", correct: false },
-      ]
-    },
-    {
-      question: "Wat is de naam van Playboi Carti's tweede studioalbum?", // Vraag 5
-      answers: [
-        { test: "Die Lit", correct: false },
-        { test: "Whole Lotta Red", correct: true },  // Juist antwoord
-        { test: "Vamp Life", correct: false },
-      ]
-    },
-    {
-      question: "Welke unieke stemstijl gebruikt Playboi Carti vaak?", // Vraag 6
-      answers: [
-        { test: "Baby Voice", correct: true },  // Juist antwoord
-        { test: "Mumble Flow", correct: false },
-        { test: "Whisper Flow", correct: false },
-      ]
-    },
-    {
-      question: "Welke rapper is een frequente samenwerkingspartner van Playboi Carti?", // Vraag 7
-      answers: [
-        { test: "Travis Scott", correct: false },
-        { test: "Lil Uzi Vert", correct: true },  // Juist antwoord
-        { test: "Future", correct: false },
-      ]
-    },
-    {
-      question: "Hoe noemen fans de dans bij het nummer 'Magnolia'?", // Vraag 8
-      answers: [
-        { test: "The Milly Rock", correct: true },  // Juist antwoord
-        { test: "The Dab", correct: false },
-        { test: "The Woah", correct: false },
-      ]
-    },
-    {
-      question: "In welk jaar werd Playboi Carti geboren?", // Vraag 9
-      answers: [
-        { test: "1995", correct: false },
-        { test: "1996", correct: true },  // Juist antwoord
-        { test: "1997", correct: false },
-      ]
-    },
-    {
-      question: "Wat is de stijl die vaak wordt geassocieerd met Playboi Carti's muziek?", // Vraag 10
-      answers: [
-        { test: "Trap", correct: true },  // Juist antwoord
-        { test: "Lo-fi Hip Hop", correct: false },
-        { test: "Drill", correct: false },
-      ]
-    }
-  ];
+  {
+    question: "Hoe heet Playboi Carti in het echt?", // Vraag 1
+    answers: [
+      { test: "Jordan Terrell Carter", correct: true },   // Juist antwoord
+      { test: "Carter Pierre Williams", correct: false },  // Onjuist antwoord
+      { test: "Jonathan Taylor Carter", correct: false },  // Onjuist antwoord
+    ]
+  },
+  {
+    question: "Wat is de naam van Playboi Carti's debuutmixtape?", // Vraag 2
+    answers: [
+      { test: "Die Lit", correct: false },
+      { test: "Playboi Carti", correct: true }, // Juist antwoord
+      { test: "Whole Lotta Red", correct: false },
+    ]
+  },
+  {
+    question: "Met welk nummer brak Playboi Carti door?", // Vraag 3
+    answers: [
+      { test: "Magnolia", correct: true },  // Juist antwoord
+      { test: "Shoota", correct: false },
+      { test: "Location", correct: false },
+    ]
+  },
+  {
+    question: "Welke producer werkte veel samen met Playboi Carti?", // Vraag 4
+    answers: [
+      { test: "Metro Boomin", correct: false },
+      { test: "Pierre Bourne", correct: true },  // Juist antwoord
+      { test: "Zaytoven", correct: false },
+    ]
+  },
+  {
+    question: "Wat is de naam van Playboi Carti's tweede studioalbum?", // Vraag 5
+    answers: [
+      { test: "Die Lit", correct: false },
+      { test: "Whole Lotta Red", correct: true },  // Juist antwoord
+      { test: "Vamp Life", correct: false },
+    ]
+  },
+  {
+    question: "Welke unieke stemstijl gebruikt Playboi Carti vaak?", // Vraag 6
+    answers: [
+      { test: "Mumble Flow", correct: false },
+      { test: "Whisper Flow", correct: false },
+      { test: "Baby Voice", correct: true },  // Juist antwoord
+    ]
+  },
+  {
+    question: "Welke rapper is een frequente samenwerkingspartner van Playboi Carti?", // Vraag 7
+    answers: [
+      { test: "Travis Scott", correct: false },
+      { test: "Lil Uzi Vert", correct: true },  // Juist antwoord
+      { test: "Future", correct: false },
+    ]
+  },
+  {
+    question: "Hoe noemen fans de dans bij het nummer 'Magnolia'?", // Vraag 8
+    answers: [
+      { test: "The Milly Rock", correct: true },  // Juist antwoord
+      { test: "The Dab", correct: false },
+      { test: "The Woah", correct: false },
+    ]
+  },
+  {
+    question: "In welk jaar werd Playboi Carti geboren?", // Vraag 9
+    answers: [
+      { test: "1996", correct: false },
+      { test: "1997", correct: false },
+      { test: "1995", correct: true },  // Juist antwoord
+    ]
+  },
+  {
+    question: "Wat is de stijl die vaak wordt geassocieerd met Playboi Carti's muziek?", // Vraag 10
+    answers: [
+      { test: "Lo-fi Hip Hop", correct: false },
+      { test: "Trap", correct: true },  // Juist antwoord
+      { test: "Drill", correct: false },
+    ]
+  },
+  {
+    question: "Wat is de naam van Playboi Carti's alter ego?", // Vraag 11
+    answers: [
+      { test: "King Vamp", correct: true },  // Juist antwoord
+      { test: "Lil Vamp", correct: false },
+      { test: "Vamp Lord", correct: false },
+    ]
+  },
+  {
+    question: "Welke modeontwerper heeft Playboi Carti beïnvloed?", // Vraag 12
+    answers: [
+      { test: "Virgil Abloh", correct: false },
+      { test: "Raf Simons", correct: true },  // Juist antwoord
+      { test: "Alexander Wang", correct: false },
+    ]
+  },
+  {
+    question: "Wat is de naam van Playboi Carti's zoon?", // Vraag 13
+    answers: [
+      { test: "Onyx", correct: true },  // Juist antwoord
+      { test: "Diamond", correct: false },
+      { test: "Jasper", correct: false },
+    ]
+  },
+  {
+    question: "Welke stad komt Playboi Carti oorspronkelijk vandaan?", // Vraag 14
+    answers: [
+      { test: "Chicago", correct: false },
+      { test: "Atlanta", correct: true },  // Juist antwoord
+      { test: "New York", correct: false },
+    ]
+  },
+  {
+    question: "Wat is de naam van Playboi Carti's eerste tour?", // Vraag 15
+    answers: [
+      { test: "Neon Tour", correct: false },
+      { test: "Die Lit Tour", correct: true },  // Juist antwoord
+      { test: "Whole Lotta Red Tour", correct: false },
+    ]
+  },
+  {
+    question: "Welke artiest heeft Playboi Carti beïnvloed?", // Vraag 16
+    answers: [
+      { test: "Drake", correct: false },
+      { test: "Jay-Z", correct: false },
+      { test: "Kanye West", correct: true },  // Juist antwoord
+    ]
+  },
+  {
+    question: "Wat is Playboi Carti's favoriete kleur?", // Vraag 17
+    answers: [
+      { test: "Rood", correct: true },  // Juist antwoord
+      { test: "Blauw", correct: false },
+      { test: "Groen", correct: false },
+    ]
+  },
+  {
+    question: "Welke modecollectie heeft Playboi Carti gemodelleerd?", // Vraag 18
+    answers: [
+      { test: "Yeezy", correct: false },
+      { test: "VFiles", correct: true },  // Juist antwoord
+      { test: "Off-White", correct: false },
+    ]
+  },
+  {
+    question: "Wat is de naam van Playboi Carti's label?", // Vraag 19
+    answers: [
+      { test: "Opium", correct: true },  // Juist antwoord
+      { test: "XO", correct: false },
+      { test: "Dreamville", correct: false },
+    ]
+  },
+  {
+    question: "Welke artiest heeft Playboi Carti ontdekt?", // Vraag 20
+    answers: [
+      { test: "ASAP Rocky", correct: true },  // Juist antwoord
+      { test: "Kanye West", correct: false },
+      { test: "Travis Scott", correct: false },
+    ]
+  }
+];
 
 // Elementen voor het weergeven van de vraag en antwoorden
 const questionElement = document.getElementById("questions");
 const answerButtons = document.getElementById("answers-buttons");
 const nextButton = document.getElementById("next-btn");
 const muziek = new Audio('sounds/seeyuh.mp3') //Dit is het geluid dat je hoort wanneer je een 10 scoort bij Playboi Carti quiz
-
 
 // Variabelen om de voortgang en score bij te houden
 let currentQuestionindex = 0;
@@ -156,10 +234,10 @@ function selectAnswer(e) {
 function showScore() {
   resetstate();  // Reset de weergave
   questionElement.innerHTML = `Je scoorde ${score} van de ${questions.length}!`;  // Toon de score
-  if (score === 20){
-    questionElement.innerHTML = `Je scoorde ${score} van de ${questions.length}! <br> FWEEHHHHHHH`;  // Toon de score
+  if (score === 10){
+    questionElement.innerHTML = `Je scoorde ${score} van de ${questions.length}! <br> FWEEHHHHHHH HOMICIDE`;  // Toon de score
     muziek.play()
-}
+  }
   nextButton.innerHTML = "Speel opnieuw";  // Zet de tekst van de knop op "Speel opnieuw"
   nextButton.style.display = "block";  // Toon de knop
 }
@@ -182,7 +260,6 @@ nextButton.addEventListener("click", () => {
     startQuiz();  // Start de quiz opnieuw
   }
 });
-
 
 // Start de quiz bij het laden van de pagina
 startQuiz();
