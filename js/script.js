@@ -868,19 +868,19 @@ function secretQuiz(){
             ]
         },
         {
-            question: "Wat is de naam van Yuno Miles' tweede studioalbum?",
+            question: "Wat zij yuno's oma tegen hem?",
             answers: [
-                { text: "Yuno World", correct: true }, // Juist antwoord
-                { text: "Miles Ahead", correct: false },
-                { text: "Yuno Universe", correct: false },
+                { text: "******", correct: true }, // Juist antwoord
+                { text: "Nice person", correct: false },
+                { text: "Bad person", correct: false },
             ]
         },
         {
-            question: "Welke unieke stemstijl gebruikt Yuno Miles vaak?",
+            question: "wat deed yuno nadat zijn oma dat tegen hem zei",
             answers: [
-                { text: "Baby Voice", correct: false },
-                { text: "Mumble Flow", correct: false },
-                { text: "Yuno Voice", correct: true }, // Juist antwoord
+                { text: "Kusje geven", correct: false },
+                { text: "Knuffel geven", correct: false },
+                { text: "Hit her", correct: true }, // Juist antwoord
             ]
         },
         {
@@ -1341,7 +1341,7 @@ function playboiQuiz(){
       function showScore() {
         resetstate();  // Reset de weergave
         questionElement.innerHTML = `Je scoorde ${score} van de ${questions.length}!`;  // Toon de score
-        if (score === 10){
+        if (score === 20){
           questionElement.innerHTML = `Je scoorde ${score} van de ${questions.length}! <br> FWEEHHHHHHH HOMICIDE`;  // Toon de score
           muziek.play()
         }
