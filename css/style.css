@@ -69,8 +69,8 @@ a {
     display: flex;
     flex-wrap:nowrap;  
     justify-content: center;
-    margin-left: 400px;
-    margin-right: 400px;
+    margin-left: 500px;
+    margin-right: 500px;
     margin-top: 40px;
 }
 
@@ -182,8 +182,8 @@ footer {
 
 /* Dit is voor de fotos die je ziet op kies.html */
 #foto {
-    width: 450px;
-    height: 450px;
+    width: 400px;
+    height: 400px;
     margin-bottom: 20px;
     margin-top: 20px;
     border-radius: 20px;
@@ -203,11 +203,10 @@ footer {
 @media (max-width: 1700px) {
     #form1 {
         position: relative;
-        display: flex;
-        flex-wrap: wrap;  
+        display: flex; 
         justify-content: center;
-        margin-left: 400px;
-        margin-right: 400px;
+        margin-left: 500px;
+        margin-right: 500px;
         animation: fade 1s;
     }
 }
