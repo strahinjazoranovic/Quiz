@@ -209,6 +209,24 @@ footer {
         margin-right: 500px;
         animation: fade 1s;
     }
+
+    #foto {
+        width: 320px;
+        height: 320px;
+        animation: fade 1s;
+    }
+}
+
+@media (max-width: 1272px) {
+    #form1 {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;  
+        justify-content: center;
+        margin-left: 80px;
+        margin-right: 80px;
+        animation: fade 1s;
+    }
 }
 
 @media (max-width: 1500px) {
@@ -232,10 +250,10 @@ footer {
     }
 
     #form1 {
-        position: relative;
+        position: relative; 
         display: flex;
-        flex-wrap: wrap;  
-        justify-content: center;
+        flex-direction: column; 
+        align-items: center; 
         margin-left: 80px;
         margin-right: 80px;
         animation: fade 1s;
